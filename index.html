@@ -368,8 +368,8 @@ function payloadToText(p) {
 function finishSuccess(payload, message) {
   document.getElementById("submitBtn").disabled = true;
   document.getElementById("submitBtn").textContent = "Submitted ✓";
-  document.getElementById("submitInfo").textContent = message;
-  document.getElementById("submitInfo").classList.add("show");
+  document.getElementById("submitSuccess").textContent = message;
+  document.getElementById("submitSuccess").classList.add("show");
   buildSummary(document.getElementById("finalSummary"));
   reviewStep.classList.remove("active");
   successStep.classList.add("active");
